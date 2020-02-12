@@ -30,7 +30,6 @@ fish -c "omf install nvm"
 echo "INSTALLING GOOGLE CHROME"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
 
 echo "INSTALLING VSCODE"
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
@@ -62,11 +61,5 @@ code --install-extension dbaeumer.vscode-eslint
 
 echo "----- Bracket Pair Colorizer"
 code --install-extension CoenraadS.bracket-pair-colorizer
-
-echo "----- Material Icon Theme"
-code --install-extension PKief.material-icon-theme
-
-echo "----- One Dark Pro"
-code --install-extension zhuangtongfa.Material-theme
 
 
