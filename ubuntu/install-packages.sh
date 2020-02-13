@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "INSTALLING PACKAGES"
-sudo apt install git fish fonts-firacode software-properties-gtk
+echo "INSTALLING BASIC PACKAGES"
+sudo apt install git fish fonts-firacode software-properties-gtk openjdk-8-jdk
 
 echo "SET FISH AS DEFAULT SHELL"
 sudo chsh -s `which fish`
@@ -69,4 +69,6 @@ code --install-extension PKief.material-icon-theme
 echo "----- One Dark Pro"
 code --install-extension zhuangtongfa.Material-theme
 
-
+echo "INCREASE WATCHER LIMIT"
+echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
