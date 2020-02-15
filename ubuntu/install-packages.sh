@@ -21,7 +21,7 @@ sudo apt update
 sudo apt install yarn
 
 echo "INSTALLING FISH THEME"
-fish -c "omf install bobthefish"
+fish -c "omf install spacefish"
 
 echo "INSTALLING NVM"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
