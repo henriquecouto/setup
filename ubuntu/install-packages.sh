@@ -23,6 +23,9 @@ sudo apt install yarn
 echo "INSTALL CREATE REACT APP"
 sudo yarn global add create-react-app
 
+echo "INSTALL FIREBASE TOOLS"
+sudo yarn global add firebase-tools
+
 echo "INSTALLING OH MY FISH"
 fish -c "curl -L https://get.oh-my.fish | fish"
 
