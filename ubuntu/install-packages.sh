@@ -3,7 +3,7 @@ echo "INSTALLING BASIC PACKAGES"
 sudo apt install git fish fonts-firacode software-properties-gtk openjdk-8-jdk
 
 echo "SET FISH AS DEFAULT SHELL"
-sudo chsh -s `which fish`
+chsh -s `which fish`
 
 echo "CONFIGURING GITHUB"
 git config --global user.name "Henrique Couto"
