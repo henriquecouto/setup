@@ -5,7 +5,7 @@ sudo apt install git fish fonts-firacode openjdk-8-jdk
 echo "SET FISH AS DEFAULT SHELL"
 chsh -s `which fish`
 
-echo "CONFIGURING GITHUB"
+echo "CONFIGURING GIT"
 git config --global user.name "Henrique Couto"
 git config --global user.email "henrique.coutu@live.com"
 git config --global credential.helper "cache --timeout=86400"
