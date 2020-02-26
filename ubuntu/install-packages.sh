@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "INSTALLING BASIC PACKAGES"
-sudo apt install git fish fonts-firacode software-properties-gtk openjdk-8-jdk
+sudo apt install git fish fonts-firacode openjdk-8-jdk
 
 echo "SET FISH AS DEFAULT SHELL"
 chsh -s `which fish`
