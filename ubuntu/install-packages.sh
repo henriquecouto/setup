@@ -81,6 +81,9 @@ code --install-extension zhuangtongfa.Material-theme
 echo "----- GitLens"
 code --install-extension eamodio.gitlens
 
+echo "----- EditorConfig"
+code --install-extension EditorConfig.EditorConfig
+
 echo "INCREASE WATCHER LIMIT"
 echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
