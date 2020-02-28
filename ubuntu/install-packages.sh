@@ -47,6 +47,10 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt update
 sudo apt install code
 
+echo "INCREASE WATCHER LIMIT"
+echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+
 echo "INSTALLING VSCODE EXTENSIONS"
 echo "----- Auto Rename Tag"
 code --install-extension formulahendry.auto-rename-tag
@@ -84,6 +88,4 @@ code --install-extension eamodio.gitlens
 echo "----- EditorConfig"
 code --install-extension EditorConfig.EditorConfig
 
-echo "INCREASE WATCHER LIMIT"
-echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
-sudo sysctl -p
+
