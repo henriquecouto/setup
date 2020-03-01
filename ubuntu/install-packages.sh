@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "INSTALLING BASIC PACKAGES"
-sudo apt install git fish fonts-firacode openjdk-8-jdk
+sudo apt install git fish fonts-firacode openjdk-8-jdk apt-transport-https ca-certificates gnupg
 
 echo "SET FISH AS DEFAULT SHELL"
 chsh -s `which fish`
@@ -50,6 +50,13 @@ sudo apt install code
 echo "INCREASE WATCHER LIMIT"
 echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
+
+echo "INSTALL GSUTILS"
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+sudo apt-get update
+sudo apt-get install google-cloud-sdk
+gcloud auth login
 
 echo "INSTALLING VSCODE EXTENSIONS"
 echo "----- Auto Rename Tag"
