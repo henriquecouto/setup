@@ -53,6 +53,7 @@ echo "INSTALLING GOOGLE CHROME"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
+sudo apt install -f
 
 echo "INSTALLING VSCODE"
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
@@ -69,7 +70,6 @@ echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.clou
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-get update
 sudo apt-get install google-cloud-sdk
-gcloud auth login
 
 echo "INSTALLING VSCODE EXTENSIONS"
 echo "----- Auto Rename Tag"
