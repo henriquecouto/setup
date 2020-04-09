@@ -21,6 +21,9 @@ sudo apt update
 sudo apt install yarn
 
 echo "INSTALL CREATE REACT APP"
+sudo yarn global add live-server
+
+echo "INSTALL CREATE REACT APP"
 sudo yarn global add create-react-app
 
 echo "INSTALL FIREBASE TOOLS"
