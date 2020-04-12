@@ -1,3 +1,3 @@
-# Scripts to run and be happy 😁️
+# Setup to run and be happy 😁️
 
-### Check personal items, like `git config`
+### Check personal items in script, like `git config`
