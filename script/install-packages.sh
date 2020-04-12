@@ -1,6 +1,13 @@
 #!/bin/bash
+
+echo "INSTALLING GOOGLE CHROME"
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+sudo apt install -f
+
 echo "INSTALLING BASIC PACKAGES"
-sudo apt install git fish fonts-firacode openjdk-8-jdk apt-transport-https ca-certificates gnupg software-properties-gtk
+sudo apt install git fish fonts-firacode openjdk-8-jdk apt-transport-https ca-certificates gnupg
 
 echo "SET FISH AS DEFAULT SHELL"
 chsh -s `which fish`
@@ -48,12 +55,6 @@ fish -c "omf install spacefish"
 echo "INSTALLING NVM"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 fish -c "omf install nvm"
-
-echo "INSTALLING GOOGLE CHROME"
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
-sudo apt install -f
 
 echo "INSTALLING VSCODE"
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
