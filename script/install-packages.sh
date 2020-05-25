@@ -27,8 +27,8 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update
 sudo apt install yarn
 
-echo "INSTALL CREATE REACT APP"
-sudo yarn global add live-server
+echo "INSTALL STATIC-SERVER"
+sudo yarn global add static-server
 
 echo "INSTALL CREATE REACT APP"
 sudo yarn global add create-react-app
