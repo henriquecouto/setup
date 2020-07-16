@@ -112,4 +112,7 @@ code --install-extension eamodio.gitlens
 echo "----- EditorConfig"
 code --install-extension EditorConfig.EditorConfig
 
+echo "----- vscode-styled-components"
+code --install-extension jpoissonnier.vscode-styled-components
+
 
