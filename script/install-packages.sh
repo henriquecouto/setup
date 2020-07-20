@@ -39,6 +39,9 @@ sudo yarn global add create-react-app
 echo "INSTALL FIREBASE TOOLS"
 sudo yarn global add firebase-tools
 
+echo "INSTALL LERNA"
+sudo yarn global add lerna
+
 echo "INSTALL DOCKER"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
