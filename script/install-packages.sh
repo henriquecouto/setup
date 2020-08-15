@@ -118,4 +118,5 @@ code --install-extension EditorConfig.EditorConfig
 echo "----- vscode-styled-components"
 code --install-extension jpoissonnier.vscode-styled-components
 
-
+echo "----- vscode-styled-components"
+code --install-extension chenxsan.vscode-standardjs
