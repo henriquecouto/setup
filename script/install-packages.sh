@@ -14,7 +14,7 @@ chsh -s `which fish`
 
 echo "CONFIGURING GIT"
 git config --global user.name "Henrique Couto"
-git config --global user.email "henrique.coutu@live.com"
+git config --global user.email "email@henriquecouto.com.br"
 git config --global credential.helper "cache --timeout=86400"
 
 echo "INSTALLING NODEJS"
