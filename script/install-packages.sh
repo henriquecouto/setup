@@ -7,7 +7,7 @@ rm google-chrome-stable_current_amd64.deb
 sudo apt install -f
 
 echo "INSTALLING BASIC PACKAGES"
-sudo apt install git fish fonts-firacode openjdk-8-jdk apt-transport-https ca-certificates gnupg
+sudo apt install git fish fonts-firacode fonts-roboto openjdk-8-jdk apt-transport-https ca-certificates gnupg
 
 echo "SET FISH AS DEFAULT SHELL"
 chsh -s `which fish`
