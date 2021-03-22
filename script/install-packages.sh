@@ -15,7 +15,7 @@ chsh -s `which fish`
 echo "CONFIGURING GIT"
 git config --global user.name "Henrique Couto"
 git config --global user.email "email@henriquecouto.com.br"
-git config --global credential.helper "cache --timeout=86400"
+git config --global credential.helper "cache --timeout=259200"
 
 echo "INSTALLING NODEJS"
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -57,7 +57,7 @@ sudo apt update
 sudo apt install code
 
 echo "INCREASE WATCHER LIMIT"
-echo "fs.inotify.max_user_watches=1572864" | sudo tee -a /etc/sysctl.conf
+echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 
 echo "INSTALL GSUTILS"
