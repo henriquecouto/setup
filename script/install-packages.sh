@@ -27,20 +27,8 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update
 sudo apt install yarn
 
-echo "INSTALL STATIC-SERVER"
-sudo yarn global add static-server
-
-echo "INSTALL LIVE-SERVER"
-sudo yarn global add live-server
-
 echo "INSTALL CREATE REACT APP"
 sudo yarn global add create-react-app
-
-echo "INSTALL FIREBASE TOOLS"
-sudo yarn global add firebase-tools
-
-echo "INSTALL LERNA"
-sudo yarn global add lerna
 
 echo "INSTALL DOCKER"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -69,7 +57,7 @@ sudo apt update
 sudo apt install code
 
 echo "INCREASE WATCHER LIMIT"
-echo "fs.inotify.max_user_watches=524288" | sudo tee -a /etc/sysctl.conf
+echo "fs.inotify.max_user_watches=1572864" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 
 echo "INSTALL GSUTILS"
@@ -77,46 +65,3 @@ echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.clou
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-get update
 sudo apt-get install google-cloud-sdk
-
-echo "INSTALLING VSCODE EXTENSIONS"
-echo "----- Auto Rename Tag"
-code --install-extension formulahendry.auto-rename-tag
-
-echo "----- Auto Close Tag"
-code --install-extension formulahendry.auto-close-tag
-
-echo "----- Highlight Matching Tag"
-code --install-extension vincaslt.highlight-matching-tag
-
-echo "----- Auto Complete Tag"
-code --install-extension formulahendry.auto-complete-tag
-
-echo "----- Color Highlight"
-code --install-extension naumovs.color-highlight
-
-echo "----- Prettier - Code formatter"
-code --install-extension esbenp.prettier-vscode
-
-echo "----- ESLint"
-code --install-extension dbaeumer.vscode-eslint
-
-echo "----- Bracket Pair Colorizer"
-code --install-extension CoenraadS.bracket-pair-colorizer
-
-echo "----- Material Icon Theme"
-code --install-extension PKief.material-icon-theme
-
-echo "----- One Dark Pro"
-code --install-extension zhuangtongfa.Material-theme
-
-echo "----- GitLens"
-code --install-extension eamodio.gitlens
-
-echo "----- EditorConfig"
-code --install-extension EditorConfig.EditorConfig
-
-echo "----- vscode-styled-components"
-code --install-extension jpoissonnier.vscode-styled-components
-
-echo "----- vscode-styled-components"
-code --install-extension chenxsan.vscode-standardjs
