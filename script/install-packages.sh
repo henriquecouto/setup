@@ -18,7 +18,7 @@ git config --global user.email "email@henriquecouto.com.br"
 git config --global credential.helper "cache --timeout=259200"
 
 echo "INSTALLING NODEJS"
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install nodejs -y
 
 echo "INSTALLING YARN"
